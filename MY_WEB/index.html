@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="scroll.css"/>
+<link rel="stylesheet" href="CSS.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<script src="scroll.js"></script>
+<body>
+
+<div id="topnav">
+  <a class="active" href="#Oliver9"><div class="grow">Disorders</div></a>
+  <a href="#search-bar">
+    <div class="container3">
+        <form action="https://www.google.com/search" method="get" class="Search_bar">
+            <input type="text" placeholder="Do your own research" name="q">
+            <button type="submit"><img src="images/search.png"></button>
+        </form>
+    </div>
+  </a>
+  <a href="#Home"><div class="grow"><i class="fa fa-home"></i></i></div></a>
+</div>
+
+<div class="content">   
+    <div class="box">
+        <h1>Mental Illness</h1>
+    </div>
+
+    <section class="container">
+        <div class="card">
+            <input id="ch1" type="checkbox">
+            <div class="card-image car-1"></div>
+            <h2>Why do we need to be aware of mental Illness</h2>
+            <p>Being aware of mental illness is crucial because it directly impacts our well-being and society as a whole. Firstly, awareness helps combat stigma and discrimination that often surround mental health conditions, encouraging empathy and understanding. This promotes a supportive environment where individuals feel more comfortable seeking help.</p>
+            <div class="content_two1">
+                <p>Secondly, awareness enables early identification of mental health issues, leading to timely intervention and better outcomes. Recognizing the signs allows individuals to access appropriate support and treatment before conditions worsen.</p>
+                <p>Furthermore, mental health literacy empowers people to take charge of their own mental well-being. Understanding the importance of self-care and stress management can enhance resilience and coping skills.</p>
+                <p>Moreover, awareness of mental illness drives the development of better mental health policies and resources. When the public is informed, governments and organizations are more likely to allocate funding and support initiatives that improve mental health services.</p>
+                <p>In summary, being aware of mental illness is vital for reducing stigma, enabling early intervention, empowering individuals, and driving positive change in mental health support. It creates a healthier and more compassionate society that values mental well-being as a fundamental aspect of overall health.</p>
+                <label class="label1" for="ch1">READ LESS</label>
+            </div>
+            <label class="label1" for="ch1">READ MORE</label>
+        </div>
+
+        <div class="card">
+            <input id="ch12" type="checkbox">
+            <div class="card-image car-2"></div>
+            <h2>How can we help people suffering from mental illness</h2>
+            <p>Supporting people suffering from mental illness requires a compassionate and multifaceted approach. Firstly, we must encourage open conversations about mental health to reduce stigma and create a safe space for individuals to seek help. Offering empathy and understanding can make a significant difference in their journey towards recovery.</p>
+            <div class="content_two12">
+                <p>Secondly, education is key. By raising awareness about mental health conditions and their symptoms, we can help people recognize when they or someone they know may be struggling. Providing information on available resources and treatment options empowers them to take proactive steps towards getting the support they need.</p>
+                <p>Being a good listener and offering non-judgmental emotional support can also make a substantial impact. Simply lending an empathetic ear and showing genuine concern can provide solace and reduce feelings of isolation.</p>
+                <p>Encouraging professional help is crucial. Encourage individuals to seek therapy, counseling, or psychiatric assistance when needed. Assisting them in finding appropriate mental health services and accompanying them to appointments can be incredibly helpful.</p>
+                <p>Lastly, fostering a supportive community is essential. By promoting mental health initiatives and support groups, we can create a network where individuals can connect with others facing similar challenges, fostering a sense of belonging and understanding.</p>
+                <p>In conclusion, helping people with mental illness involves promoting awareness, providing education, offering emotional support, encouraging professional help, and building a caring community. Together, we can create an environment where individuals feel validated, heard, and empowered to manage their mental health effectively.</p>
+                <label class="label12" for="ch12">READ LESS</label>
+            </div>
+            <label class="label12" for="ch12">READ MORE</label>
+        </div>
+
+        <div class="card">
+            <input id="ch" type="checkbox">
+            <div class="card-image car-3"></div>
+            <h2>Common misconceptions</h2>
+            <p>Several common misconceptions surround mental illness, contributing to stigma and misunderstanding. Firstly, one prevalent misconception is that mental illness is a sign of weakness or a character flaw. In reality, mental health conditions are complex and often result from a combination of genetic, biological, environmental, and psychological factors.</p>
+            <div class="content_two">
+                <p>Secondly, some people believe that individuals with mental illness are dangerous or violent. However, the vast majority of people with mental health conditions are not violent, and they are more likely to be victims of violence than perpetrators.</p>
+                <p>Another misconception is that mental illnesses are not real medical conditions. In truth, mental health disorders are legitimate medical conditions that can be diagnosed and treated by qualified professionals.</p>
+                <p>Additionally, people may assume that individuals with mental illness can "snap out of it" or overcome their struggles simply by trying harder. This overlooks the profound impact of mental health on a person's thoughts, emotions, and behavior, making it essential to provide support and understanding.</p>
+                <p>Lastly, there is a misconception that seeking help for mental health issues is a sign of weakness or incompetence. On the contrary, reaching out for support demonstrates courage and a willingness to prioritize one's well-being.</p>
+                <p>Addressing these misconceptions is critical to fostering a more compassionate and informed society that supports individuals dealing with mental health challenges without judgment or prejudice.</p>
+                <label class="label" for="ch">READ LESS</label>
+            </div>
+            <label class="label" for="ch">READ MORE</label>
+        </div>
+
+    </section>
+</div>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("topnav");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>    
+</body>
+</html>
